@@ -1,0 +1,85 @@
+body {
+  background: #bbbfbd;
+}
+header .logo {
+  background: #bbbfbd;
+}
+.menu a:nth-child(4) li {
+  text-decoration: line-through;
+}
+
+.main .text {
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.section .container {
+  width: 80%;
+  max-width: 500px;
+  align-items: flex-start;
+  font-family: "Barlow Condensed", sans-serif;
+  margin: 20px auto;
+}
+
+label {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: #bbbfbd;
+  font-size: 16px;
+  z-index: 5;
+  letter-spacing: 1px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+button {
+  background: #434343;
+  color: #d5d1cc;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  padding: 14px 40px;
+  margin-bottom: 50px;
+}
+
+.thankyou_message {
+  font-family: "Teko", sans-serif;
+  font-size: 1vw;
+}
+textarea {
+  width: 100%;
+  background: #bbbfbd;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.is-center {
+  text-align: center;
+}
+button {
+  float: right;
+}
+#name,
+#email {
+  width: 100%;
+}
+.honeypot-field {
+  display: none;
+}
+fieldset {
+  width: 500px;
+  margin-bottom: 20px;
+}
+input {
+  line-height: 30px;
+  padding-top: 4px;
+  background: #bbbfbd;
+}
+
+@media screen and (max-width: 768px) {
+  fieldset {
+    width: calc(100vw - 110px);
+  }
+}

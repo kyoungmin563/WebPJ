@@ -1,0 +1,241 @@
+body {
+  background: #d5d1cc;
+}
+header .logo {
+  background: #d5d1cc;
+}
+
+.main .video {
+  margin-top: 20px;
+}
+.main .video video {
+  width: 100%;
+}
+
+.section .text {
+  font-weight: bold;
+  font-size: 4vw;
+  text-transform: uppercase;
+}
+.section1 .btn {
+  margin: 40px 0 80px;
+  font-size: 14px;
+  border: 1px solid black;
+  padding: 20px 14px;
+  box-shadow: 1px 1px 0 black;
+}
+.section1 .btn:hover {
+  background: #e8b4b4;
+}
+.section1 .text p {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: overline;
+}
+
+.section2 {
+  background: #404040;
+  color: white;
+  padding-bottom: 50px;
+}
+.section2 .work-group {
+  width: 100%;
+  max-width: 1320px;
+}
+.section2 .work-group li a {
+  border: 2px solid white;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0 30px;
+  overflow: hidden;
+}
+.section2 .work-group .num {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 20px;
+}
+.section2 .work-group .name {
+  text-transform: uppercase;
+  font-size: 8vw;
+  line-height: 8vw;
+}
+.section2 .work-group .arrow {
+  margin-top: 10px;
+}
+
+.section2 .work-group li:last-child a {
+  border-bottom: 2px solid white;
+  background: #d5d1cc;
+  color: #313131;
+}
+.section2 .work-group li:last-child .name {
+  font-size: 5vw;
+}
+.section2 .work-group a div:not(.bg-img):not(.bg) {
+  z-index: 1;
+}
+.section2 .work-group .bg-img {
+  position: absolute;
+  top: -260%;
+  width: 100%;
+  z-index: 0;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.05, -0.02, 0, 1.02);
+}
+.section2 .work-group .bg-img img {
+}
+.section2 .work-group .bg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #e8b4b4;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.section2 .work-group a:hover .bg-img {
+  top: 0;
+}
+.section2 .work-group a:last-child:hover .bg {
+  top: 0;
+}
+
+.section3 .title {
+  margin: 30px auto;
+}
+.section3 .wrap {
+  display: flex;
+  max-width: 1320px;
+  width: 100%;
+}
+.section3 .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0 60px;
+}
+.section3 .item .img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 200px;
+  margin-bottom: 40px;
+}
+.section3 .img img {
+  width: 50%;
+}
+.section3 .wrap .title {
+  font-weight: bold;
+  font-size: 40px;
+  color: #303030;
+}
+.section3 .wrap-r {
+  border-left: 1px solid black;
+}
+.section3 .item .arrow {
+  background: #404040;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3 .item .arrow:hover {
+  background: #e8b4b4;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+.alert .wrap {
+  width: 500px;
+  height: 220px;
+  position: fixed;
+  top: calc(50% - 110px);
+  left: calc(50% - 250px);
+  background: rgba(240, 240, 240, 1);
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0 40px 40px;
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 5px;
+}
+.alert .img {
+  width: 60px;
+  margin-right: 20px;
+}
+.alert .img img {
+  width: 100%;
+}
+.alert .btn-close {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #de5347;
+  color: white;
+  line-height: 35px;
+  padding: 0 15px;
+  border-radius: 0 0 5px 5px;
+}
+.alert .btn-close button {
+  line-height: 35px;
+}
+.alert .today {
+  display: flex;
+  align-items: center;
+}
+.alert .circle {
+  border: 1px solid white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.alert .circle span {
+  display: block;
+  background: white;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: calc(50% - 5px);
+}
+.alert .circle span:nth-child(1) {
+}
+.alert .circle span:nth-child(2) {
+}
+.alert .today p {
+  margin-left: 10px;
+}
+.alert .contents {
+}
+.alert .contents h4 {
+  font-size: 18px;
+}
+.alert .contents p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.alert .close,
+.alert .today {
+  cursor: pointer;
+}

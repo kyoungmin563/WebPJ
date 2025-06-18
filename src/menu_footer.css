@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+}
+button {
+  border: none;
+  color: inherit;
+  background: inherit;
+  outline-style: none;
+}
+.container {
+  max-width: 1320px;
+  width: calc(100% - 60px);
+  margin: 0px auto;
+}
+
+header .container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(100, 100, 100, 1);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+  height: 40px;
+}
+header h1 {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 40px);
+}
+header .text-l {
+  letter-spacing: 1px;
+}
+header .text-r {
+}
+header .logo {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+}
+header .logo img {
+  width: 100%;
+}
+
+.ham-icon {
+  display: none;
+  height: 40px;
+  width: 40px;
+  background: #434343;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 15;
+}
+.ham-icon span {
+  display: block;
+  background: #d5d1cc;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: calc(50% - 12px);
+  border-radius: 2px;
+}
+.ham-icon span:nth-child(1) {
+  transform: translate(0, 8px);
+  transition: 1s;
+}
+.ham-icon span:nth-child(2) {
+}
+.ham-icon span:nth-child(3) {
+  transform: translate(0, -8px);
+  transition: 1s;
+}
+
+.ham-close span:nth-child(1) {
+  transform: translate(0, 0px) rotate(45deg);
+}
+.ham-close span:nth-child(2) {
+  display: none;
+}
+.ham-close span:nth-child(3) {
+  transform: translate(0, 0px) rotate(-45deg);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu li {
+  margin: 0 14px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+}
+.menu li a {
+  padding: 10px 0;
+}
+.menu li:hover {
+  text-decoration: line-through;
+}
+
+.ham-menu {
+  background: #434343;
+  position: absolute;
+  top: -150vw;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  transition: 0.8s;
+}
+.ham-menu .text {
+  text-transform: uppercase;
+  color: #d5d1cc;
+  text-align: center;
+}
+.ham-menu .text p {
+  margin-top: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.ham-menu .text .ham-h {
+  font-family: "Teko", sans-serif;
+  font-size: 16vw;
+  margin: 80px 0 30px;
+}
+.ham-menu .list {
+}
+.ham-menu .list li {
+  width: 100%;
+  border-top: 1px solid #d5d1cc;
+  cursor: pointer;
+}
+.ham-menu .list li a {
+}
+.ham-menu .list li .num {
+  font-family: "Barlow Condensed", sans-serif;
+  position: absolute;
+  top: 20px;
+  right: 40vw;
+}
+.ham-menu .list li .title {
+  font-family: "Teko", sans-serif;
+  font-size: 10vw;
+  line-height: 18vw;
+}
+.ham-menu .list li .title:hover {
+  color: #e8b4b4;
+}
+
+.ham-top {
+  top: -50px;
+  transition: 0.8s;
+}
+
+@media screen and (max-width: 768px) {
+  .text-r {
+    display: none;
+  }
+  .ham-icon {
+    display: block;
+  }
+  .ham-menu {
+    display: block;
+  }
+}
+
+.main {
+  text-align: center;
+}
+.main .text {
+  color: #434343;
+}
+.main .title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main .title p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8vw;
+  margin-top: 20px;
+  color: #313131;
+}
+
+.section .container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section .s-title {
+  margin: 40px auto;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact .container {
+  display: flex;
+  margin-bottom: 40px;
+  border-top: 1px solid black;
+}
+.contact .logo {
+  border-right: 1px solid black;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .logo img {
+  width: 80px;
+}
+.contact .text-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  width: 70%;
+  align-items: center;
+}
+.contact .text-group li {
+  margin: 30px 50px;
+}
+
+.chat .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.chat .text {
+  font-weight: bold;
+  font-size: 5vw;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.chat .text:hover {
+  color: #e8b4b4;
+}
+
+footer {
+  color: #e8b4b4;
+  background: #303030;
+  text-align: center;
+  line-height: 50px;
+  font-size: 11px;
+}
+
+.click-li li {
+  cursor: pointer;
+}
+.click,
+.btn {
+  cursor: pointer;
+}
+
+header {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.main .title {
+  font-family: "Teko", sans-serif;
+}
+.menu {
+  font-family: "Teko", sans-serif;
+}
+section .title {
+  font-family: "Teko", sans-serif;
+}
+section .s-title {
+  font-family: "Barlow Condensed", sans-serif;
+}
+section .text {
+  font-family: "Teko", sans-serif;
+}
+section .btn {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+}
+section .work-group .name {
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+}
+section .work-group .num {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.contact h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.contact p {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+}
+footer {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #2c2c2c;
+}
+body::-webkit-scrollbar-track {
+  background-color: #e8b4b4;
+}
