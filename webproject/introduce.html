@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <title>Genians</title>
+    <style>
+        *{padding: 0;margin: 0;list-style: none;position: relative;font-family: 'Noto Sans KR', sans-serif;}
+        
+        body{background:white;}
+        .main{background-image: url(image_introduce/main.jpg);width: 100%;height: 300px;background-position: center;background-size: cover;}
+        
+        .mid-menu {display: flex;align-items: center;margin: 30px 0;}
+        .mid-menu img{display: block;}
+        .mid-menu .img{display: flex;align-items: center;margin: 0 10px;}
+        .mid-menu .arrow{}
+        .mid-menu p{margin: 0 10px;}
+        
+        nav, section{max-width: 1200px;margin: 0 auto;}
+        
+        .top{}
+        .top .title{display: flex;align-items: center;justify-content: space-between;}
+        .top .title img{display: block;}
+        .top .title .img{display: flex;align-items: center;}
+        .top .title h1{}
+        .top .icon-group{display: flex;margin: 60px 30px;}
+        .top .icon-group li{flex: 1;text-align: center;}
+        .top .icon-group li img{}
+        .top .icon-group li h4{}
+        .top .icon-group li p{color: rgba(100,100,100,1);font-size: 14px;}
+        .top .btn{margin: 0 auto; background: rgba(100,100,100,1);color: white;width: 200px;text-align: center;padding: 10px 0;cursor: pointer;}
+        
+        .mid .title{position: absolute;top: -20px;left: 80px;z-index: 100;}
+        .mid .title h2{font-weight: 300;font-size: 30px;}
+        .mid .title h1{font-size: 40px;}
+        .mid .img{margin-top: 100px;}
+        .mid .img img{display: block;}
+        .mid .logo{position: absolute;right: 0;bottom: 172px;}
+        .mid .logo img{display: block;}
+        .mid .line{background: rgba(127,190,38,0.5);width: 40px;height: 500px; position: absolute;bottom: 0px;left: 80px;}
+        .mid .text{margin-top: 50px;}
+        .mid .text p{margin: 20px 0;width: calc(100% - 180px);margin-left: 150px;font-size: 15px;}
+        
+        .bottom{background: white;width: 100%;margin-top: 100px;}
+        .bottom img{display: block;width: 100px;}
+        .bottom li{flex: 1;display: flex;align-items: center;justify-content: center;padding: 20px 0;border-right: 2px solid rgba(150,150,150,0.2);}
+        .bottom .row{display: flex;}
+        .bottom .row1{border-bottom: 2px solid rgba(150,150,150,0.2);border-top: 2px solid rgba(150,150,150,0.2);}
+        .bottom .row1 li:last-child{border-right:none;}
+        .bottom .row2{}
+        .bottom .row2 li:last-child{border-right:none;}
+        
+    </style>
+</head>
+<body>
+   <div class="sub_bg_w">
+    <div class="nav_bg_w">
+        <nav>
+            <a href="genians_home.html"><div class="logo"></div></a>
+            <ul class="main-menu">
+                <li class="li">
+                    <span>제품소개</span>
+                    <ul class="sub-menu">
+                        <li>Genian NAC</li>
+                        <li>Genian Insights E</li>
+                        <li>Genian GPI</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <a href="introduce.html"><span>회사소개</span></a>
+                    <ul class="sub-menu">
+                        <li>회사개요</li>
+                        <li>CEO 메세지</li>
+                        <li>사업영역</li>
+                        <li>CI</li>
+                        <li>연혁</li>
+                        <li>채용정보</li>
+                        <li>파트너</li>
+                        <li>CONTACT US</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <span>투자정보</span>
+                    <ul class="sub-menu">
+                        <li>재무정보</li>
+                        <li>주가정보</li>
+                        <li>공시정보</li>
+                        <li>IR 공고</li>
+                        <li>IR 자료실</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <a href="news.html"><span>미디어센터</span></a>
+                    <ul class="sub-menu">
+                        <li>회사소식</li>
+                        <li>보도자료</li>
+                        <li>블로그</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="eng">
+                <a href="https://www.genians.com/" target="_blank">ENG</a>
+            </div>
+            <div class="ham_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="icon">
+                <div class="share">
+                    <div class="share-icon"></div>
+                </div>
+                <ul class="sns">
+                    <li><a href="https://blog.naver.com/geninetworks"><img src="image_introduce/blog.png" target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/geniansk" target="_blank"><img src="image_introduce/face.png"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCROgy3oQBLX7XJxrtwlOCmw" target="_blank"><img src="image_introduce/utube.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+   
+    <header class="main"></header>
+    <nav>
+       <div class="mid-menu">
+            <div class="img"><img src="image_introduce/home.png"></div>
+            <div class="arrow"><img src="image_introduce/arrow.png"></div>
+            <p>회사소개</p>
+            <div class="arrow"><img src="image_introduce/arrow.png"></div>
+            <p>회사개요</p>
+        </div>
+    </nav>
+    
+    <section class="top">
+        <div class="title">
+            <div class="img"><img src="image_introduce/line_l.jpg"></div>
+            <h1>회사개요</h1>
+            <div class="img"><img src="image_introduce/line_r.jpg"></div>
+        </div>
+        <ul class="icon-group">
+            <li><img src="image_introduce/intro_01.png"><h4>회사명</h4><p>지니언스 주식회사 (GENIANS,INC.)<br>해외법인 : GENIANS,INC.(USA)</p></li>
+            <li><img src="image_introduce/intro_02.png"><h4>창립일</h4><p>2005년 1월 7일</p></li>
+            <li><img src="image_introduce/intro_03.png"><h4>대표자</h4><p>이동범 대표이사</p></li>
+            <li><img src="image_introduce/intro_04.png"><h4>소재지</h4><p>경기도 안양시 동안구<br>
+벌말로 66</p></li>
+            <li><img src="image_introduce/intro_05.png"><h4>대표번호</h4><p>대표번호 : 031-8084-9770<br>
+기술지원 1600-9750</p></li>
+        </ul>
+        <div class="btn">회사소개서 다운로드</div>
+    </section>
+    <section class="mid">
+        <div class="title">
+            <h2>NAC/EDR 기술 기반<br>통합 보안 플랫폼 기업,</h2>
+           <h1>지니언스</h1></div>
+        <div class="img"><img src="image_introduce/section.jpg"></div>
+        <div class="logo"><img src="image_introduce/gnians.png"></div>
+        <div class="line"></div>
+        <div class="text"><p>네트워크 접근제어(NAC: Network Access Control) 분야에서 독보적인 시장점유율 1위를 기록하고 있으며,<br> 엔드포인트 기반 지능형 위협 탐지 대응 솔루션(EDR : Endpoint Detection & Response) 분야에서도 독자 개발한 기술 경쟁우위를 바탕으로 시장 지배력을 강화하고 있습니다.</p><p>지니언스는 국내 보안 업계 중 10년 동안 가장 많이 성장한 기업이며, 설립 이후 15년 동안 지속적인 흑자를 기록하고 있습니다. <br>2016년 글로벌 비즈니스 시작으로 미국 보스턴에 현지법인을 설립했으며 2017년 8월 코스닥에 상장하였습니다.</p></div>
+    </section>
+    <div class="bottom">
+        <ul class="row row1">
+            <li><img src="image_introduce/brand/1.png"></li>
+            <li><img src="image_introduce/brand/2.png"></li>
+            <li><img src="image_introduce/brand/3.gif"></li>
+            <li><img src="image_introduce/brand/4.png"></li>
+            <li><img src="image_introduce/brand/5.jpg"></li>
+            <li><img src="image_introduce/brand/6.png"></li>
+        </ul>
+        <ul class="row row2">
+            <li><img src="image_introduce/brand/7.png"></li>
+            <li><img src="image_introduce/brand/8.png"></li>
+            <li><img src="image_introduce/brand/9.png"></li>
+            <li><img src="image_introduce/brand/10.png"></li>
+            <li><img src="image_introduce/brand/11.jpg"></li>
+            <li><img src="image_introduce/brand/12.png"></li>
+        </ul>
+    </div>
+    
+    <footer>
+        <div class="contents">
+            <div class="logo"><img src="image_introduce/footerlogo.png"></div>
+            <div class="text">
+                <div class="left">
+                    <p>CONTACT US | 개인정보 및 이메일 무단수집거부 | 뉴스레터 구독 신청</p>
+                    <p>경기도 안양시 동안구 벌말로 66 평촌역 하이필드 지식산업센터 A동 12층 | 대표이사 : 이동범 | 사업자등록번호 : 129-81-80148<br>TEL : 031-8084-9770 | FAX : 070-4332-1683</p>
+                    <p>COPYRIGHT © 2017 GENIANS, INC. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="right">기술지원 : 1600-9750 (평일 오전 9시 ~ 오후 9시)<br>도입문의 : sales@genians.com</div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.nav_bg_w nav .icon ul').hide();
+        $('.nav_bg_w nav .sub-menu').hide();
+        $(this).scrollTop(0);
+    })
+    //    메뉴 스타일 변경
+    $('.scroll li').click(function() {
+        num = $(this).index();
+        w_h = $(window).height();
+        $('.scroll li p').not($('.scroll li p').eq(num)).css({
+            color: 'white'
+        })
+        $('.scroll li p').eq(num).css({
+            color: '#7fbe27'
+        })
+        $('.scroll li span').not($('.scroll li span').eq(num)).css({
+            left: '50px'
+        })
+        $('.scroll li span').eq(num).stop().animate({
+            left: '0'
+        })
+        $(window).scrollTop(num * w_h);
+        if (num > 1) {
+    //메뉴 스타일 클래스 추가
+        $('.scroll li p').not($('.scroll li p').eq(num)).css({
+                color: 'rgba(100,100,100,1)'
+            })
+            $('.nav_bg_w').addClass('nav_bg_b');
+        } else {
+            $('.nav_bg_w').removeClass('nav_bg_b');
+        }
+    })
+    //    메인메뉴 호버 시 서브메뉴
+    $('.nav_bg_w nav .main-menu').mouseenter(function() {
+        $('.nav_bg_w').addClass('nav_bg_b');
+        $('.sub_bg_w').stop().animate({height:'380px'});
+        $('.nav_bg_w nav .sub-menu').slideDown();
+    })
+    $('.nav_bg_w nav .main-menu').mouseleave(function() {
+        $('.nav_bg_w').removeClass('nav_bg_b');
+        $('.sub_bg_w').stop().animate({height:'0px'});
+        $('.nav_bg_w nav .sub-menu').slideUp();
+    })
+    //    메인메뉴 라인 재생
+    $('.main_h .main_line .line').click(function() {
+        num = $(this).index();
+        $('.main_h .main_line .line span').not($('.main_h .main_line .line').eq(num).children('span')).css({
+            background: 'rgba(250, 250, 250, 0.4)'
+        })
+        $('.main_h .main_line .line').eq(num).children('span').css({
+            width: '0',
+            background: 'white'
+        })
+        $('.main_h .main_line .line').eq(num).children('span').stop().animate({
+            width: '80px'
+        }, 1000)
+    })
+    //    메뉴 사이트맵
+
+    //    메뉴 sns아이콘 슬라이드
+    $('.nav_bg_w nav .icon .share').click(function() {
+        $('.nav_bg_w nav .icon ul').stop().toggle();
+    })
+</script>

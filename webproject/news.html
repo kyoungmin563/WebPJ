@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <title>Genians</title>
+    <style>
+        *{padding: 0;margin: 0;list-style: none;position: relative;font-family: 'Noto Sans KR', sans-serif;}
+        
+        body{background:white;}
+        .main{background-image: url(image_news/top.jpg);width: 100%;height: 300px;background-position: center;background-size: cover;}
+        
+        .mid-menu {display: flex;align-items: center;margin: 30px 0;}
+        .mid-menu img{display: block;}
+        .mid-menu .img{display: flex;align-items: center;margin: 0 10px;}
+        .mid-menu .arrow{}
+        .mid-menu p{margin: 0 10px;}
+        
+        nav, section{max-width: 1200px;margin: 0 auto;}
+        
+        .top{}
+        .top .title{display: flex;align-items: center;justify-content:space-between;}
+        .top .title img{display: block;}
+        .top .title .img{display: flex;align-items: center;}
+        .top .title h1{}
+        .top .wrap{display: flex;align-items: center;justify-content:flex-end;width: 100%; height: 40px;margin-top: 70px;}
+        .top .wrap .text{font-size: 14px;display: flex;position: absolute;left: 0;top: 0;line-height: 40px;}
+        .top .wrap .text p{color:#7fbe27;}
+        .top .wrap .sel{border: 2px solid rgba(150,150,150,0.3); background: white;display: flex;font-size: 14px;height: 100%; padding: 0 10px;line-height: 40px;}
+        .top .wrap .sel p:nth-child(2){font-size: 10px;margin-left: 50px;}
+        .top .wrap .sear{border: 2px solid rgba(150,150,150,0.3);background: white;height: 100%;line-height: 40px;margin: 0 10px;}
+        .top .wrap .sear input{border: none;outline: none;width: 100%;height: 100%;padding: 0 10px;box-sizing: border-box;top: -2px;}
+        .top .wrap .btn{background: #7fbe27;color: white;height: 100%;padding: 0 20px;line-height: 40px;}
+        
+        .mid{margin-top: 20px;}
+        .mid .list {}
+        .mid .list li {display: flex;border-top: 2px solid rgba(150,150,150,0.3);padding: 20px;align-items: center;justify-content: space-between;}
+        .mid .list li:last-child{border-bottom: 2px solid rgba(150,150,150,0.3);}
+        .mid .list li .text{width: 750px;}
+        .mid .list li .text .title{}
+        .mid .list li .text .title h1{font-size: 20px;}
+        .mid .list li .text p{margin: 30px 0;color: rgba(100,100,100,1);height: 80px;}
+        .mid .list li .text .date {color: rgba(150,150,150,1);font-size: 14px;}
+        .mid .list li .img{width: 350px;height: 200px;overflow: hidden;}
+        .mid .list li .img img{display: block;}
+        
+        .bottom{display: flex;align-items: center;justify-content: center;margin-bottom: 100px;margin-top: 30px;}
+        .bottom .num{display: flex;}
+        .bottom .num li{width: 20px;height: 20px;line-height: 20px;color: rgba(100,100,100,1);text-align: center;margin: 0 2px;cursor: pointer;}
+        .bottom .num li:first-child{color:#7fbe27;}
+        .bottom .btn{border:2px solid rgba(150,150,150,0.3);line-height: 20px;width: 20px; height: 20px;text-align: center;cursor: pointer;margin-left: 10px;font-size: 6px;}
+    </style>
+</head>
+<body>
+   <div class="sub_bg_w">
+    <div class="nav_bg_w">
+        <nav>
+            <a href="genians_home.html"><div class="logo"></div></a>
+            <ul class="main-menu">
+                <li class="li">
+                    <span>제품소개</span>
+                    <ul class="sub-menu">
+                        <li>Genian NAC</li>
+                        <li>Genian Insights E</li>
+                        <li>Genian GPI</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <a href="introduce.html"><span>회사소개</span></a>
+                    <ul class="sub-menu">
+                        <li>회사개요</li>
+                        <li>CEO 메세지</li>
+                        <li>사업영역</li>
+                        <li>CI</li>
+                        <li>연혁</li>
+                        <li>채용정보</li>
+                        <li>파트너</li>
+                        <li>CONTACT US</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <span>투자정보</span>
+                    <ul class="sub-menu">
+                        <li>재무정보</li>
+                        <li>주가정보</li>
+                        <li>공시정보</li>
+                        <li>IR 공고</li>
+                        <li>IR 자료실</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <a href="news.html"><span>미디어센터</span></a>
+                    <ul class="sub-menu">
+                        <li>회사소식</li>
+                        <li>보도자료</li>
+                        <li>블로그</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="eng">
+                <a href="https://www.genians.com/" target="_blank">ENG</a>
+            </div>
+            <div class="ham_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="icon">
+                <div class="share">
+                    <div class="share-icon"></div>
+                </div>
+                <ul class="sns">
+                    <li><a href="https://blog.naver.com/geninetworks"><img src="image_news/blog.png" target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/geniansk" target="_blank"><img src="image_news/face.png"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCROgy3oQBLX7XJxrtwlOCmw" target="_blank"><img src="image_news/utube.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+   
+    <header class="main"></header>
+    <nav>
+       <div class="mid-menu">
+            <div class="img"><img src="image_news/home.png"></div>
+            <div class="arrow"><img src="image_news/arrow.png"></div>
+            <p>미디어센터</p>
+            <div class="arrow"><img src="image_news/arrow.png"></div>
+            <p>회사소식</p>
+        </div>
+    </nav>
+    
+    <section class="top">
+        <div class="title">
+            <div class="img"><img src="image_news/line_l.jpg"></div>
+            <h1>회사소식</h1>
+            <div class="img"><img src="image_news/line_r.jpg"></div>
+        </div>
+        <div class="wrap">
+            <div class="text">총&nbsp;<p>49</p>건의 게시물이 있습니다.</div>
+            <div class="sel"><p>전체</p><p>▼</p></div>
+            <div class="sear"><input type="text" placeholder="검색어를 입력하세요."></div>
+            <div class="btn">검색</div>
+        </div>
+    </section>
+    <section class="mid">
+        <ul class="list">
+            <li>
+                <div class="text">
+                    <div class="title"><h1>미국에 ‘We-Bridge’ 공동 설립</h1></div>
+                    <p>지란지교소프트, 지니언스, 비욘드시큐리티가 국내 보안기업들의 미국 진출에 도움을 주기 위해 캘리포니아에 'We-Bridge' 를  공동으로 설립하였습니다.  캘리포니아 북부에 영업조직을 갖추고 미국 및 글로벌 시장으로 진출하고자 하는 성숙한 B2B 제품을 보유한 한국 기업에 턴키 솔루션을 제공합니다.</p>
+                    <div class="date">2020-04-14</div>
+                </div>
+                <div class="img"><img src="image_news/s1.jpg"></div>
+            </li>
+            <li>
+                <div class="text">
+                    <div class="title"><h1>미국에 ‘We-Bridge’ 공동 설립</h1></div>
+                    <p>지란지교소프트, 지니언스, 비욘드시큐리티가 국내 보안기업들의 미국 진출에 도움을 주기 위해 캘리포니아에 'We-Bridge' 를  공동으로 설립하였습니다.  캘리포니아 북부에 영업조직을 갖추고 미국 및 글로벌 시장으로 진출하고자 하는 성숙한 B2B 제품을 보유한 한국 기업에 턴키 솔루션을 제공합니다. </p>
+                    <div class="date">2020-04-14</div>
+                </div>
+                <div class="img"><img src="image_news/s2.jpg"></div>
+            </li>
+            <li>
+                <div class="text">
+                    <div class="title"><h1>미국에 ‘We-Bridge’ 공동 설립</h1></div>
+                    <p>지란지교소프트, 지니언스, 비욘드시큐리티가 국내 보안기업들의 미국 진출에 도움을 주기 위해 캘리포니아에 'We-Bridge' 를  공동으로 설립하였습니다.  캘리포니아 북부에 영업조직을 갖추고 미국 및 글로벌 시장으로 진출하고자 하는 성숙한 B2B 제품을 보유한 한국 기업에 턴키 솔루션을 제공합니다.</p>
+                    <div class="date">2020-04-14</div>
+                </div>
+                <div class="img"><img src="image_news/s3.png"></div>
+            </li>
+            <li>
+                <div class="text">
+                    <div class="title"><h1>미국에 ‘We-Bridge’ 공동 설립</h1></div>
+                    <p>지란지교소프트, 지니언스, 비욘드시큐리티가 국내 보안기업들의 미국 진출에 도움을 주기 위해 캘리포니아에 'We-Bridge' 를  공동으로 설립하였습니다.  캘리포니아 북부에 영업조직을 갖추고 미국 및 글로벌 시장으로 진출하고자 하는 성숙한 B2B 제품을 보유한 한국 기업에 턴키 솔루션을 제공합니다.</p>
+                    <div class="date">2020-04-14</div>
+                </div>
+                <div class="img"><img src="image_news/s1.jpg"></div>
+            </li>
+        </ul>
+    </section>
+    <div class="bottom">
+        <ul class="num">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+        <div class="btn">▶</div>
+    </div>
+    
+    <footer>
+        <div class="contents">
+            <div class="logo"><img src="image_news/footerlogo.png"></div>
+            <div class="text">
+                <div class="left">
+                    <p>CONTACT US | 개인정보 및 이메일 무단수집거부 | 뉴스레터 구독 신청</p>
+                    <p>경기도 안양시 동안구 벌말로 66 평촌역 하이필드 지식산업센터 A동 12층 | 대표이사 : 이동범 | 사업자등록번호 : 129-81-80148<br>TEL : 031-8084-9770 | FAX : 070-4332-1683</p>
+                    <p>COPYRIGHT © 2017 GENIANS, INC. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="right">기술지원 : 1600-9750 (평일 오전 9시 ~ 오후 9시)<br>도입문의 : sales@genians.com</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.nav_bg_w nav .icon ul').hide();
+        $('.nav_bg_w nav .sub-menu').hide();
+        $(this).scrollTop(0);
+    })
+    //    메뉴 스타일 변경
+    $('.scroll li').click(function() {
+        num = $(this).index();
+        w_h = $(window).height();
+        $('.scroll li p').not($('.scroll li p').eq(num)).css({
+            color: 'white'
+        })
+        $('.scroll li p').eq(num).css({
+            color: '#7fbe27'
+        })
+        $('.scroll li span').not($('.scroll li span').eq(num)).css({
+            left: '50px'
+        })
+        $('.scroll li span').eq(num).stop().animate({
+            left: '0'
+        })
+        $(window).scrollTop(num * w_h);
+        if (num > 1) {
+    //메뉴 스타일 클래스 추가
+        $('.scroll li p').not($('.scroll li p').eq(num)).css({
+                color: 'rgba(100,100,100,1)'
+            })
+            $('.nav_bg_w').addClass('nav_bg_b');
+        } else {
+            $('.nav_bg_w').removeClass('nav_bg_b');
+        }
+    })
+    //    메인메뉴 호버 시 서브메뉴
+    $('.nav_bg_w nav .main-menu').mouseenter(function() {
+        $('.nav_bg_w').addClass('nav_bg_b');
+        $('.sub_bg_w').stop().animate({height:'380px'});
+        $('.nav_bg_w nav .sub-menu').slideDown();
+    })
+    $('.nav_bg_w nav .main-menu').mouseleave(function() {
+        $('.nav_bg_w').removeClass('nav_bg_b');
+        $('.sub_bg_w').stop().animate({height:'0px'});
+        $('.nav_bg_w nav .sub-menu').slideUp();
+    })
+    //    메인메뉴 라인 재생
+    $('.main_h .main_line .line').click(function() {
+        num = $(this).index();
+        $('.main_h .main_line .line span').not($('.main_h .main_line .line').eq(num).children('span')).css({
+            background: 'rgba(250, 250, 250, 0.4)'
+        })
+        $('.main_h .main_line .line').eq(num).children('span').css({
+            width: '0',
+            background: 'white'
+        })
+        $('.main_h .main_line .line').eq(num).children('span').stop().animate({
+            width: '80px'
+        }, 1000)
+    })
+    //    메뉴 사이트맵
+
+    //    메뉴 sns아이콘 슬라이드
+    $('.nav_bg_w nav .icon .share').click(function() {
+        $('.nav_bg_w nav .icon ul').stop().toggle();
+    })
+</script>
