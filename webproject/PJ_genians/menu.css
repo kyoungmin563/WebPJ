@@ -1,0 +1,192 @@
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+        a{text-decoration: none;color: inherit;}
+
+        /*        공통 메뉴 바*/
+        .sub_bg_w{
+            background: rgba(250,250,250,1);
+            position: fixed;
+            width: 100%;
+            z-index: 1001;
+            height: 0px;
+}
+        .nav_bg_w {
+            background: rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav_bg_w nav {
+            width: 1400px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .nav_bg_w nav .logo {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-image: url(image_home/logo.png);
+            width: 151px;
+            height: 35px;
+        }
+
+        .nav_bg_w nav .main-menu {
+            display: flex;
+            width: 600px;
+            margin: 0 auto;
+            justify-content: space-between;
+            color: white;
+            font-size: 18px;
+        }
+
+        .nav_bg_w nav .main-menu .li {
+            transition: 0.5s;
+        }
+        .nav_bg_w nav .main-menu .li span:hover{
+            color: #7fbe27;
+        }
+        .nav_bg_w nav .main-menu .li span {
+            line-height: 100px;
+            cursor: pointer;
+        }
+
+        .nav_bg_w nav .sub-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            font-weight: 300;
+            font-size: 14px;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 170px;
+            padding-top: 20px;
+        }
+
+        .nav_bg_w nav .sub-menu li {
+            cursor: pointer;
+            padding: 5px 0;
+        }
+        .nav_bg_w nav .sub-menu li:hover {
+            color: #7fbe27;
+            text-decoration: underline;
+        }
+
+        .nav_bg_w nav .eng {
+            position: absolute;
+            top: 0;
+            right: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .nav_bg_w nav .eng a {
+            background: rgba(100, 100, 100, 0.5);
+            display: inline-block;
+            padding: 1px 10px;
+            color: #7fbe27;
+        }
+
+
+        .nav_bg_w nav .ham_icon {
+            position: absolute;
+            top: calc(50% - 11px);
+            right: 50px;
+            width: 24px;
+            height: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .nav_bg_w nav .ham_icon span {
+            display: block;
+            height: 2px;
+            width: 24px;
+            background: white;
+        }
+
+        .nav_bg_w nav .icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+        }
+
+        .nav_bg_w nav .icon .share {
+            width: 40px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .nav_bg_w nav .icon .share-icon {
+            width: 25px;
+            height: 25px;
+            background-image: url(image_home/share.png);
+        }
+
+        .nav_bg_w nav .icon ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 200px;
+            width: 40px;
+        }
+
+        .nav_bg_w nav .icon ul li {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .nav_bg_w nav .icon ul li img {
+            display: block;
+        }
+/*        메뉴스타일 변경 추가 클래스 */
+        .nav_bg_b {
+            background: white;
+            border-bottom: 2px solid rgba(100, 100, 100, 0.2);
+        }
+        .nav_bg_b a{
+            color: black;
+        }
+
+        .nav_bg_b nav .main-menu {
+            color: black;
+        }
+
+        .nav_bg_b nav .eng a {
+            background: rgba(250, 250, 250, 0);
+            border: 2px solid rgba(100, 100, 100, 0.2);
+        }
+
+        .nav_bg_b nav .ham_icon span {
+            background: black;
+        }
+
+        .nav_bg_b nav .icon {
+            color: black;
+        }
+
+        .nav_bg_b nav .icon .share-icon {
+            background-image: url(image_home/share_b.png);
+        }
+
+        .nav_bg_b nav .logo {
+            background-image: url(image_home/logo_b.png);
+        }

@@ -1,0 +1,43 @@
+        footer {
+            background: #3d3d3d;
+            color: white;
+            font-size: 14px;
+        }
+
+        footer .contents {
+            width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+
+        footer .logo {
+            width: 120px;
+            padding: 30px 0;
+        }
+
+        footer .logo img {
+            display: block;
+            width: 100%;
+        }
+
+        footer .text {
+            display: flex;
+        }
+
+        footer .text .left {
+            color: lightgray;
+        }
+
+        footer .text .left p {}
+
+        footer .text .left p:nth-child(2) {
+            font-size: 12px;
+        }
+
+        footer .text .left p:nth-child(3) {
+            font-size: 12px;
+        }
+
+        footer .text .right {
+            margin-left: 200px;
+        }

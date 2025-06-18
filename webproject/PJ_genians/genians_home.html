@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <title>Genians</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        
+        header {}
+
+        /*        공통 스크롤바*/
+        header .scroll {}
+
+        /*        메인 시작*/
+        .main_h {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .main_img {
+            background-image: url(image_home/main.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -100;
+        }
+
+        .main_text {
+            color: white;
+            top: calc(50% - 100px);
+            text-align: center;
+        }
+
+        .main_text h3 {
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        .main_text h1 {
+            font-size: 40px;
+            background: rgba(250, 250, 250, 0.2);
+            width: 500px;
+            margin: 10px auto;
+        }
+
+        .main_text p {
+            font-size: 20px;
+            margin-top: 50px;
+        }
+
+        .main_h .main_line {
+            position: absolute;
+            bottom: 50px;
+            left: calc(50% - 150px);
+            display: flex;
+            width: 300px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .main_h .main_line .line {
+            height: 6px;
+            width: 80px;
+            cursor: pointer;
+        }
+
+        .main_h .main_line .line span {
+            display: block;
+            background: rgba(250, 250, 250, 0.4);
+            height: 6px;
+            width: 80px;
+            border-radius: 3px;
+        }
+
+        .main_h .main_line .line:nth-child(1) span {
+            background: white;
+        }
+
+        /*        제품 소개 시작*/
+
+        .product_h {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .product_img {
+            display: flex;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .product_img li {
+            flex: 1;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .product_img .wrap {
+            width: calc(100% - 300px);
+            height: 150px;
+        }
+
+        .product_img li:nth-child(1) {
+            background-image: url(image_home/product1.jpg);
+        }
+
+        .product_img li:nth-child(2) {
+            background-image: url(image_home/product2.jpg);
+        }
+
+        .product_img li:nth-child(3) {
+            background-image: url(image_home/product3.jpg);
+        }
+
+        .product_img h3 {
+            font-size: 30px;
+        }
+
+        .product_img h6 {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .product_img li span:nth-child(1) {
+            right: 540px;
+            margin-bottom: 30px;
+        }
+
+        .product_img li span:nth-child(4) {
+            left: 540px;
+            position: absolute;
+            bottom: 0;
+
+        }
+
+
+        .product_img li span {
+            display: block;
+            height: 2px;
+            background: white;
+            width: 100%;
+        }
+
+
+        .product_img li p {
+            border: 2px solid white;
+            padding: 5px 10px;
+            bottom: -70px;
+            left: calc(50% - 50px);
+            position: absolute;
+            display: none;
+        }
+        
+        /*        컨텐츠(section) 시작*/
+        section {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .genians .img {
+            width: 1100px;
+            height: 660px;
+            left: 0;
+            top: 150px;
+        }
+
+        .genians .img img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .genians .text {
+            width: 500px;
+            text-align: center;
+            right: 200px;
+            top: 350px;
+            position: absolute;
+        }
+
+        .genians .text h3 {
+            margin-bottom: 40px;
+        }
+
+        .genians .text_img {}
+
+        .genians .text_img img {}
+
+        .genians .text_img img:nth-child(1) {
+            top: -30px;
+        }
+
+        .genians .text_img img:nth-child(2) {}
+
+        .genians .text_img img:nth-child(3) {
+            top: -30px;
+        }
+
+        .genians .contents {
+            position: absolute;
+            background: #7fbe27;
+            color: white;
+            width: 700px;
+            padding: 50px;
+            left: 800px;
+            top: 750px;
+            font-size: 18px;
+        }
+
+        .genians .contents p {}
+
+        .costomer {}
+        
+        .costomer .list {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: auto auto;
+            grid-template-columns: auto auto;
+            width: 1400px;
+            margin: 0 auto;
+            color: white;
+            top: 200px;
+        }
+
+        .costomer .list div {
+            overflow: hidden;
+        }
+
+        .costomer .list img {
+            position: absolute;
+            transform: scale(1);
+            transition: 0.5s;
+        }
+
+        .costomer .list .tec {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
+            grid-column: 1/3;
+            height: 350px;
+            width: 1400px;
+        }
+        .costomer .list>div:nth-child(2){ 
+            -ms-grid-row: 2;
+            -ms-grid-column: 1;
+           }
+        .costomer .list>div:nth-child(3){ 
+            -ms-grid-row: 2;
+            -ms-grid-column: 2;
+         }
+        
+        .costomer .list div:hover .img {
+            transform: scale(1.1);
+
+        }
+
+        .costomer .list .emp {
+            height: 350px;
+            width: 700px;
+        }
+
+        .costomer .list .news {
+            height: 350px;
+            width: 700px;
+        }
+
+        .costomer .list h2 {
+            margin: 50px 0 20px 50px;
+        }
+
+        .costomer .list p {
+            margin: 0 50px;
+        }
+
+        .costomer .list .button {
+            border: 2px solid white;
+            width: 100px;
+            text-align: center;
+            padding: 10px 0;
+            margin: 100px 50px;
+            cursor: pointer;
+        }
+
+        .costomer .list .arrow {
+            width: 45px;
+            height: 45px;
+            right: 50px;
+            position: absolute;
+            bottom: 50px;
+            cursor: pointer;
+        }
+
+        .news {}
+
+
+        .news .title {
+            margin: 150px auto 80px;
+            text-align: center;
+        }
+
+        .news .title h1 {
+            font-size: 40px;
+        }
+
+        .news .title p {}
+
+        .news .contents {
+            display: flex;
+            right: 200px;
+            width: 1620px;
+            z-index: 50;
+            overflow: hidden;
+        }
+
+        .news .contents li {
+/*            width: 300px;*/
+            height: 450px;
+            border: 4px solid rgba(180, 180, 180, 0.3);
+            background: white;
+            margin-left: 30px;
+            padding: 30px;
+            cursor: pointer;
+            right: 0;
+        }
+
+        .news .contents li img {
+            display: block;
+            margin-bottom: 20px;
+            height: 200px;
+            width: 300px;
+        }
+
+        .news .contents li h5 {
+            font-size: 20px;
+            height: 60px;
+        }
+
+        .news .contents li p {
+            font-size: 14px;
+            margin: 20px 0;
+            height: 120px;
+        }
+
+        .news .contents li .date {
+            font-size: 14px;
+            color: rgba(180, 180, 180, 1);
+            margin-top: 20px;
+        }
+
+        .news .shadow {
+            width: 350px;
+            height: 450px;
+            background: #7fbe27;
+            position: absolute;
+            top: 260px;
+            right: 300px;
+        }
+
+        .news .shadow img {
+            display: block;
+        }
+
+        .news .shadow .arrow-l {
+            position: absolute;
+            bottom: 10px;
+            right: 100px;
+            cursor: pointer;
+        }
+
+        .news .shadow .arrow-r {
+            position: absolute;
+            bottom: 10px;
+            right: 30px;
+            cursor: pointer;
+        }
+        .scroll {
+            position: fixed;
+            right: 0px;
+            top: calc(50% - 30px);
+            z-index: 100;
+        }
+
+        .scroll ul {
+            text-align: end;
+            color: white;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            font-size: 16px;
+            overflow: hidden;
+        }
+
+        .scroll li {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .scroll li p {
+            cursor: pointer;
+        }
+
+        .scroll li span {
+            display: block;
+            height: 2px;
+            width: 50px;
+            background: #7fbe27;
+            margin-left: 10px;
+            border-radius: 2px 0 0 1px;
+            left: 50px;
+        }
+
+        .scroll li:nth-child(1) span {
+            left: 0;
+        }
+
+        .scroll li:nth-child(1) p {
+            color: #7fbe27;
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="scroll">
+        <ul>
+            <li>
+                <p>HOME</p><span></span>
+            </li>
+            <li>
+                <p>PRODUCT</p><span></span>
+            </li>
+            <li>
+                <p>GENIANS</p><span></span>
+            </li>
+            <li>
+                <p>CUSTOMER</p><span></span>
+            </li>
+            <li>
+                <p>NEWS</p><span></span>
+            </li>
+        </ul>
+    </div>
+    <div class="sub_bg_w">
+    <div class="nav_bg_w">
+        <nav>
+            <a href="genians_home.html"><div class="logo"></div></a>
+            <ul class="main-menu">
+                <li class="li">
+                    <span>제품소개</span>
+                    <ul class="sub-menu">
+                        <li>Genian NAC</li>
+                        <li>Genian Insights E</li>
+                        <li>Genian GPI</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <a href="introduce.html"><span>회사소개</span></a>
+                    <ul class="sub-menu">
+                        <li>회사개요</li>
+                        <li>CEO 메세지</li>
+                        <li>사업영역</li>
+                        <li>CI</li>
+                        <li>연혁</li>
+                        <li>채용정보</li>
+                        <li>파트너</li>
+                        <li>CONTACT US</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <span>투자정보</span>
+                    <ul class="sub-menu">
+                        <li>재무정보</li>
+                        <li>주가정보</li>
+                        <li>공시정보</li>
+                        <li>IR 공고</li>
+                        <li>IR 자료실</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <a href="news.html"><span>미디어센터</span></a>
+                    <ul class="sub-menu">
+                        <li>회사소식</li>
+                        <li>보도자료</li>
+                        <li>블로그</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="eng">
+                <a href="https://www.genians.com/" target="_blank">ENG</a>
+            </div>
+            <div class="ham_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="icon">
+                <div class="share">
+                    <div class="share-icon"></div>
+                </div>
+                <ul class="sns">
+                    <li><a href="https://blog.naver.com/geninetworks"><img src="image_home/blog.png" target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/geniansk" target="_blank"><img src="image_home/face.png"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCROgy3oQBLX7XJxrtwlOCmw" target="_blank"><img src="image_home/utube.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+    <header class="main_h wheel">
+        <div class="main_img"></div>
+        <div class="main_text">
+            <h3>단말 이상행위 탐지 및 대응을 위한</h3>
+            <h1>Genian Insights E</h1>
+            <p>지니언스는 네트워크 보안 및 엔드포인트 보안 분야의<br>최고 기술력을 기반으로 IoT ・ 5G ・ AI 시대의 보안을 선도합니다.</p>
+        </div>
+        <div class="main_line">
+            <div class="line"><span></span></div>
+            <div class="line"><span></span></div>
+            <div class="line"><span></span></div>
+        </div>
+    </header>
+
+    <header class="product_h wheel">
+        <ul class="product_img">
+            <li>
+                <div class="wrap">
+                    <span></span>
+                    <h3>Genian NAC</h3>
+                    <h6>'네트워크 접근제어 솔루션'<br>(NAC : Network Access Control) </h6>
+                    <span></span>
+                    <p>바로가기</p>
+                </div>
+            </li>
+            <li>
+                <div class="wrap">
+                    <span></span>
+                    <h3>Genian Insights E</h3>
+                    <h6>'단말 이상행위 탐지 및 대응 솔루션'</h6>
+                    <span></span>
+                    <p>바로가기</p>
+                </div>
+            </li>
+            <li>
+                <div class="wrap">
+                    <span></span>
+                    <h3>Genian GPI</h3>
+                    <h6>'PC 보안 수준 진단 솔루션'</h6>
+                    <span></span>
+                    <p>바로가기</p>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <section class="genians wheel">
+        <div class="img"><img src="image_home/shake.jpg"></div>
+        <div class="text">
+            <h3>NAC/EDR 기술 기반 통합 보안 플랫폼 기업,</h3>
+            <div class="text_img">
+                <img src="image_home/1.png">
+                <img src="image_home/genians.png">
+                <img src="image_home/2.png">
+            </div>
+        </div>
+        <div class="contents">
+            <p>지니언스는 NAC와 EDR의 경쟁력에 클라우드 · OT 영역까지<br>사업을 확장하여 ‘글로벌 통합 보안 플랫폼’ 기업으로 성장하고 있습니다.</p>
+        </div>
+    </section>
+    <section class="costomer wheel">
+        <div class="list">
+            <div class="tec">
+                <img class="img" src="image_home/3_1.jpg">
+                <h2>기술문의</h2>
+                <p>지니언스는 네트워크 보안 및 엔드포인트 보안 분야의<br>최고 기술력을 기반으로 IoT ・ 5G ・ AI 시대의 보안을 선도합니다.</p>
+                <div class="button">바로가기</div>
+            </div>
+            <div class="emp">
+                <img class="img" src="image_home/3_2.jpg">
+                <h2>인재채용</h2>
+                <p>여러분들의 무한한 가능성에 관심이 있습니다.<br>그 열정을 최대한 발휘할 수 있는 공간을 만들어 드리셌습니다.</p>
+                <div class="arrow"><img src="image_home/r.png"></div>
+            </div>
+            <div class="news">
+                <img class="img" src="image_home/3_3.jpg">
+                <h2>월간 뉴스레터</h2>
+                <p>구독하시면 매월 셋째두 수요일 아침,<br>새로운 지니언스의 뉴스레터를 받아보실 수 있습니다.</p>
+                <div class="arrow"><img src="image_home/r.png"></div>
+            </div>
+        </div>
+    </section>
+    <section class="news wheel">
+        <div class="title">
+            <h1>회사소식</h1>
+            <p>국내 No.1 NAC 지니언스의 새로운 소식을 전해드립니다</p>
+        </div>
+        <ul class="contents">
+            <li><img src="image_home/news/1.png">
+                <h5>
+                    재택근무 환경 정보보안 가이드라인 제시</h5>
+                <p>집이나 회사에서도 보안 걱정 없이 근무하는 것이 화두가 되면서 각 기업들은 정보보안의 새로운 체계나 정책을 만들어 보안을 한층 강화하고 있습니다.</p>
+                <h6 class="date">2020-03-14</h6>
+            </li>
+            <li><img src="image_home/news/2.jpg">
+                <h5>미국에 ‘We-Bridge’ 공동 설립</h5>
+                <p>지란지교소프트, 지니언스, 비욘드시큐리티가 국내 보안기업들의 미국 진출에 도움을 주기 위해 캘리포니아에 'We-Bridge' 를 공동으로 설립하였습니다.</p>
+                <h6 class="date">2020-03-21</h6>
+            </li>
+            <li><img src="image_home/news/3.png">
+                <h5>이동범 대표이사, KISIA 회장으로 선출</h5>
+                <p>한국정보보호산업협회는 19일 여의도 켄싱턴 호텔에서 정기총회를 지니언스 이동범 대표이사를 15대 협회장으로 선임하였습니다.</p>
+                <h6 class="date">2020-04-14</h6>
+            </li>
+            <li><img src="image_home/news/4.jpg">
+                <h5>
+                    20억원 규모 자기 주식 취득 신탁계약 체결</h5>
+                <p>글로벌 통합 보안 플랫폼 기업 지니언스가 주가 안정을 위한 주주가치 제고를 위해 20억원 규모로 자사주신탁계약 체결을 결정하였습니다.</p>
+                <h6 class="date">2020-04-20</h6>
+            </li>
+            <li><img src="image_home/news/2.jpg">
+                <h5>미국에 ‘We-Bridge’ 공동 설립</h5>
+                <p>지란지교소프트, 지니언스, 비욘드시큐리티가 국내 보안기업들의 미국 진출에 도움을 주기 위해 캘리포니아에 'We-Bridge' 를 공동으로 설립하였습니다.</p>
+                <h6 class="date">2020-03-21</h6>
+            </li>
+            <li><img src="image_home/news/3.png">
+                <h5>이동범 대표이사, KISIA 회장으로 선출</h5>
+                <p>한국정보보호산업협회는 19일 여의도 켄싱턴 호텔에서 정기총회를 지니언스 이동범 대표이사를 15대 협회장으로 선임하였습니다.</p>
+                <h6 class="date">2020-04-14</h6>
+            </li>
+        </ul>
+        <div class="shadow">
+            <div class="arrow-l"><img src="image_home/l.png"></div>
+            <div class="arrow-r"><img src="image_home/r.png"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contents">
+            <div class="logo"><img src="image_home/footerlogo.png"></div>
+            <div class="text">
+                <div class="left">
+                    <p>CONTACT US | 개인정보 및 이메일 무단수집거부 | 뉴스레터 구독 신청</p>
+                    <p>경기도 안양시 동안구 벌말로 66 평촌역 하이필드 지식산업센터 A동 12층 | 대표이사 : 이동범 | 사업자등록번호 : 129-81-80148<br>TEL : 031-8084-9770 | FAX : 070-4332-1683</p>
+                    <p>COPYRIGHT © 2017 GENIANS, INC. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="right">기술지원 : 1600-9750 (평일 오전 9시 ~ 오후 9시)<br>도입문의 : sales@genians.com</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    var page = 0;
+    var win_h = $(window).height();
+    
+    function up_down(){
+        $('html, body').stop().animate({scrollTop:win_h*page});
+        $('.scroll li p').not($('.scroll li p').eq(page)).css({
+            color: 'white'
+        })
+        $('.scroll li p').eq(page).css({
+            color: '#7fbe27'
+        })
+        $('.scroll li span').not($('.scroll li span').eq(page)).css({
+            left: '50px'
+        })
+        $('.scroll li span').eq(page).stop().animate({
+            left: '0'
+        })
+        if (page > 1) {
+    //메뉴 스타일 클래스 추가
+        $('.scroll li p').not($('.scroll li p').eq(page)).css({
+                color: 'rgba(100,100,100,1)'
+            })
+            $('.nav_bg_w').addClass('nav_bg_b');
+        } else {
+            $('.nav_bg_w').removeClass('nav_bg_b');
+        }
+    }
+    
+    $(document).ready(function() {
+        $('.nav_bg_w nav .icon ul').hide();
+        $('.nav_bg_w nav .sub-menu').hide();
+        up_down();
+    })
+    
+    //    메뉴 스타일 변경
+    $('.scroll li').click(function(){
+        page = $(this).index();
+        up_down();
+    })
+    //    메인메뉴 호버 시 서브메뉴
+    $('.nav_bg_w nav .main-menu').mouseenter(function() {
+        $('.nav_bg_w').addClass('nav_bg_b');
+        $('.sub_bg_w').stop().animate({height:'380px'});
+        $('.nav_bg_w nav .sub-menu').slideDown();
+    })
+    $('.nav_bg_w nav .main-menu').mouseleave(function() {
+        $('.nav_bg_w').removeClass('nav_bg_b');
+        $('.sub_bg_w').stop().animate({height:'0px'});
+        $('.nav_bg_w nav .sub-menu').slideUp();
+    })
+    //    메인메뉴 라인 재생
+    $('.main_h .main_line .line').click(function() {
+        num = $(this).index();
+        $('.main_h .main_line .line span').not($('.main_h .main_line .line').eq(num).children('span')).css({
+            background: 'rgba(250, 250, 250, 0.4)'
+        })
+        $('.main_h .main_line .line').eq(num).children('span').css({
+            width: '0',
+            background: 'white'
+        })
+        $('.main_h .main_line .line').eq(num).children('span').stop().animate({
+            width: '80px'
+        }, 1000)
+    })
+    //    메뉴 사이트맵
+
+    //    메뉴 sns아이콘 슬라이드
+    $('.nav_bg_w nav .icon .share').click(function() {
+        $('.nav_bg_w nav .icon ul').stop().toggle();
+    })
+    //    우측 슬라이스 메뉴 클릭 시 스크롤바 이동 라인 양옆
+
+    //    제품 마우스 호버 시 라인 양옆
+    $('.product_img li').mouseenter(function() {
+        num = $(this).index();
+        $('.product_img li p').eq(num).fadeIn(300);
+        $('.product_img li span:nth-child(1)').eq(num).stop().animate({
+            right: '0'
+        })
+        $('.product_img li span:nth-child(4)').eq(num).stop().animate({
+            left: '0'
+        })
+    })
+    $('.product_img li').mouseleave(function() {
+        num = $(this).index();
+        $('.product_img li p').eq(num).fadeOut(300);
+        $('.product_img li span:nth-child(1)').eq(num).stop().animate({
+            right: '540px'
+        })
+        $('.product_img li span:nth-child(4)').eq(num).stop().animate({
+            left: '540px'
+        })
+    })
+    //    뉴스 좌측 우측 버튼 클릭 시 이동
+//    $('.news .shadow .arrow-l').click(function() {
+//        now = $('.news .contents li').css('right');
+//        $('.news .contents li').stop().animate({right:i+100})
+//    })
+//    $('.news .shadow .arrow-r').click(function() {
+//        now = $('.news .contents li').css('right');
+//        $('.news .contents li').stop().animate({right:now+(i*390)})
+//    })
+    
+    $('.wheel').on('mousewheel',function(event){
+        delta = event.originalEvent.wheelDelta;
+        event.preventDefault();
+        hasani = $('html, body').is(':animated');
+        if(delta<0 && page<5 && !hasani){
+           page++;
+            up_down();
+           }
+        else if(delta>0 && page>0 && !hasani){
+            page--;
+            up_down();
+        }
+    })
+    
+</script>
